@@ -26,9 +26,16 @@ int main()
   // }
 
   // updation of 2 numbers
-  for (int i = 0; i < 20; i +=2)
+  for (int i = 0; i < 20; i += 2)
   {
     cout << i;
+  }
+  // print a to z in one line
+  char ch = 'A';
+  for (int i = 0; i < 26; i++)
+  {
+    cout << ch << " ";
+    ch++;
   }
 
   return 0;

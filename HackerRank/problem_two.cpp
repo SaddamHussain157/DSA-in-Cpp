@@ -7,7 +7,7 @@ int main()
     int n;
     cout << "Enter the N value: ";
     cin >> n;
-    if (n <= 1)
+    if (n == 1)
     {
         cout << "One";
     }
@@ -40,13 +40,13 @@ int main()
         cout << "eight";
     }
 
-    else if (n <= 9)
+    else if (n == 9)
     {
         cout << "nine";
     }
-    else
+    if (n > 9)
     {
-        cout << "Greater then 9";
+        cout << "Greater than 9";
     }
 
     return 0;
