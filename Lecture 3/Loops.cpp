@@ -26,17 +26,40 @@ int main()
   // }
 
   // updation of 2 numbers
-  for (int i = 0; i < 20; i += 2)
-  {
-    cout << i;
-  }
+  // for (int i = 0; i < 20; i += 2)
+  // {
+  //   cout << i;
+  // }
   // print a to z in one line
-  char ch = 'A';
-  for (int i = 0; i < 26; i++)
-  {
-    cout << ch << " ";
-    ch++;
-  }
+  // char ch = 'A';
+  // for (int i = 0; i < 26; i++)
+  // {
+  //   cout << ch << " ";
+  //   ch++;
+  // }
 
+  int n = 8, r = 2;
+  int factorialNorR = 1;
+  int n3 = n - r;
+  cout << "N3 value: " << n3 << endl;
+  for (int i = 1; i <= n3; i++)
+  {
+    factorialNorR *= i;
+  }
+  cout << factorialNorR;
+
+  // int factorail2 = 1;
+  // for (int i = 1; i <= r; i++)
+  // {
+  //   factorail2 *= i;
+  //   }
+  //   cout << factorail2;
+
+  // int factorial = 1;
+  // for (int i = 1; i <= n; i++)
+  // {
+  //   factorial *= i;
+  //   }
+  //   cout << factorial;
   return 0;
 }

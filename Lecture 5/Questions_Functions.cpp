@@ -41,9 +41,34 @@ int sum_od_digit(int num)
     }
     return sum;
 }
+int binomialCoeffecient(int n, int r)
+{
+    int factorial = 1, factorail2 = 1, factorialNorR = 1;
+    for (int i = 1; i <= n; i++)
+    {
+        factorial *= i;
+    }
+
+    for (int i = 1; i <= r; i++)
+    {
+        factorail2 *= i;
+    }
+    int n3 = n - r;
+    for (int i = 1; i <= n3; i++)
+    {
+        factorialNorR *= i;
+    }
+    // cout << factorialNorR << endl;
+
+    int nCr = (factorial / (factorail2 * factorialNorR));
+    return nCr;
+}
 int main()
 {
-    cout << sum_od_digit(2356);
+    int r = 2;
+    int n = 8;
+    cout << "binomialCoeffecient: " << binomialCoeffecient(n, r);
+    // cout << sum_od_digit(2356);
     // cout << "the sum function result is: " << sumFunction(5, 5, 5, 5);
 
     // cout << "Factorial of 1 to n is: " << factorailNum(22);
