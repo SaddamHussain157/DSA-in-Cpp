@@ -38,15 +38,15 @@ int main()
   //   ch++;
   // }
 
-  int n = 8, r = 2;
+  // int n = 8, r = 2;
   int factorialNorR = 1;
-  int n3 = n - r;
-  cout << "N3 value: " << n3 << endl;
-  for (int i = 1; i <= n3; i++)
-  {
-    factorialNorR *= i;
-  }
-  cout << factorialNorR;
+  // int n3 = n - r;
+  // cout << "N3 value: " << n3 << endl;
+  // for (int i = 1; i <= n3; i++)
+  // {
+  // factorialNorR *= i;
+  // }
+  // cout << factorialNorR;
 
   // int factorail2 = 1;
   // for (int i = 1; i <= r; i++)
@@ -61,5 +61,24 @@ int main()
   //   factorial *= i;
   //   }
   //   cout << factorial;
+  // Q1
+  int n = 5, sum = 0;
+  for (int i = 0; i <= n; i++)
+  {
+    sum += i;
+  }
+  // cout << "Sum of nutural Numbers: " << sum;
+  // Q2
+  for (int i = 0; i < 4; i++)
+  {
+    cout << "****" << endl;
+  }
+  // Q3
+  for (int i = 10; i >0; i--)
+  {
+    cout << i << " ";
+  }
+  
+
   return 0;
 }
